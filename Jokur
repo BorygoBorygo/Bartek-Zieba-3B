@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <input type="number" name="liczba" />
+        <input type="submit" name="pokaż" />
+
+    </form>
+
+    <div></div>
+</body>
+
+
+<script>
+    //pobieram formularz
+    const formularz = document.querySelector('form');
+    //pobieramy poble input o nazwie liczba
+    const poleLiczba = document.querySelector('input[name="liczba"]');
+    const div = document.querySelector('div');
+    //obslugujmy zdarzenie submit na forularzu 
+    formularz.addEventListener('submit', (e)=>{
+        e.preventDefault();//zatrzymanie domyslnej akcji
+        //pobieramy wartosc pola
+        const wartoscPolaLiczba = poleLiczba.value;
+        //do diva wrzucamy wpisana liczbe
+        div.textContent = wartoscPolaLiczba;
+    })
+</script>
+</html>
