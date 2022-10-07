@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu{
+    display: flex;
+    height: 100px;
+    background-color: grey;
+}
+.braz{
+   align-items: stretch;
+    background-color: brown;
+   width: 33.3%;
+}
+.srodek1{
+    flex-direction: column;
+    width: 77.7%;
+}
+.srodek{
+    width: 50%;
+}
+.prawo{
+    width: 50%;
+}
+.wszystko{
+    display: flex;
+}
+.bok{
+    display: flex;
+}
+.zolty{
+    background-color: gold;
+    height: 50px;
+    flex-basis: 100%;
+}
+.jeden{
+    background-color: lightblue;
+    height: 50px;
+    width: 100%;
+}
+.dwa{
+    background-color: lightcoral;
+    height: 50%;
+    width: 100%;
+}
+.trzy{
+    background-color: burlywood;
+    height: 50%;
+    width: 100%;
+}
+.cztery{
+    background-color: darkblue;
+    height: 50px;
+    width: 100%;
+}
+.piec{
+    background-color: lightgray;
+    height: 50px;
+    width: 100%;
+}
+.szesc{
+    background-color: grey;
+    height: 50px;
+    width: 100%;
+}
+.siedem{
+    background-color: darkslategrey;
+    height: 50px;
+    width: 100%;
+}
+.dol{
+    background-color: darkgoldenrod;
+    display: flex;
+}
+.proba{
+    height: 75%;
+}
+    </style>
+</head>
+<body>
+    <header class="menu"> header </header>
+
+
+<div class="wszystko">
+    <div class="braz">
+        <section class="brazowy">braz</section>
+        </div> 
+    
+        <div class="srodek1">
+            <div class="zolty">
+                <section class="zolty">zolt</section>
+                </div>
+        <div class="bok">
+            
+
+            <div class="srodek">
+                <section class="jeden">1</section>
+
+                <div class="proba">
+                <section class="dwa">2</section>
+                <section class="trzy">3</section>
+                </div>
+
+            </div>
+
+            <div class="prawo">
+                <section class="cztery">4</section>
+                <section class="piec">5</section>
+                <section class="szesc">6</section>
+                <section class="siedem">7</section>
+            </div> 
+    </div>
+    <div class="dol">
+        <section>dol</section>
+    </div>
+  </div>
+</body>
+</html>
