@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+
+<style>
+.flex-container{
+    
+}
+
+
+
+.flex-itema {
+  width: 900px;
+  height: 150px;
+  background-color: cornflowerblue;
+  
+}
+
+.flex-itemb {
+
+width: 150px;
+height: 900px;
+background-color: brown;
+
+}
+.k1 {
+    display: flex;
+}
+
+.flex-itemc{
+    width: 300px;
+    height: 150px;
+    background-color: gray;
+}
+
+.k2 {
+    display: flex;
+}
+.flex-itemd{
+    width: 300px;
+    height: 150px;
+    background-color: rgb(134, 106, 106);
+}
+
+.k3 {
+    display: flex;
+}
+
+.e {
+width: 200px;
+height: 200px;
+background-color: rgb(82, 61, 82);
+
+}
+.f {
+    width: 200px;
+height: 200px;
+    background-color: rgb(82, 72, 72);
+}
+.g{
+    width: 200px;
+height: 200px;
+
+    background-color: rgb(68, 15, 68);
+}
+
+.a1 {
+
+    width: 300px;
+    height: 550px;
+    background-color: rgb(204, 162, 162);
+}
+.a2 {
+    height: 275px;
+    width: 300px;
+background-color: rgb(151, 93, 54);
+
+}
+.a3{
+    height: 275px;
+    width: 300px;
+background-color: rgb(104, 88, 67);
+}
+
+.k5 {
+    display: flex;
+}
+.prostokat{
+    width: 150px;
+height: 900px;
+background-color: brown;
+}
+
+</style>
+
+
+
+</head>
+<body>
+    
+<div class="flex-container">
+  <div class="flex-itema"></div>
+  <div class="k2">
+  <div class="flex-itemb">
+  </div>
+  <div class="k4">
+  <div class="k1">
+  <div class="flex-itemc"></div>
+  <div class="flex-itemd"></div>
+  <div class="flex-iteme"></div>
+  </div>
+  <div class="k3">
+      <div class="e"></div>
+      <div class="f"></div>
+      <div class="g"></div>
+  </div>
+
+  <div class="k5">
+      <div class="a1"></div>
+      <div class="k6">
+
+<div class="a2"></div>
+<div class="a3"></div>
+
+
+      </div>
+  </div>
+  </div>
+  <div class="prostokat"></div>
+  </div>
+  <div class="flex-itema"></div>
+    
+  
+</div>
+
+
+</body>
+</html>
