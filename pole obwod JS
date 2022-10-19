@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pole oraz obwod kwadratu lub kwadratu</h1>
+<form action=""method="post">
+    <input type="number" name="liczba1" placeholder="podaj liczbe :">
+    <input type="number" name="liczba2" placeholder="podaj liczbe :">
+    <div>
+        <button>kwadrat</button>
+        <button>prostokat</button>
+      
+    </div>
+
+<input type="submit" value="Oblicz" />
+ 
+</form>
+<div class="pole">pole wynosi :</div>
+<div class="obwod">obwod wynosi :</div>
+<script>
+  
+    const formularz = document.querySelector('form');
+    const poleliczba1 = document.querySelector('input[name="liczba1"]');
+    const poleliczba2 = document.querySelector('input[name="liczba2"]');
+    const elementDiv1 = document.querySelector('.pole');
+    const elementDiv2 = document.querySelector('.obwod');
+  
+ 
+    formularz.addEventListener('submit', function(e){
+        e.preventDefault();
+        const liczba1 = poleliczba1.value * 1;
+        const liczba2 = poleliczba2.value * 1;
+        elementDiv1.textContent += liczba1 * liczba2;
+        elementDiv2.textContent += liczba1 * 2  + liczba2 * 2 ;
+    });
+</script>
+
+</body>
+</html>
