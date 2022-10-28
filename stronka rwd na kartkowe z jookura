@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: calc(100%-20px);
+            
+        }
+        .menu {
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu-items {
+            display: flex;
+            list-style: none;
+        }
+ 
+        .menu-items a {
+            display: block;
+            border: 1px solid black;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+ 
+        nav {
+            border-bottom: 2px solid black;
+           /* height: 100px; */
+            padding-top: 20px;
+ 
+        }
+ 
+        .image {
+            /*height: 100px; */
+        }
+ 
+        .image img {
+            height: auto;
+            max-width: 100%;
+            object-fit: cover;
+        }
+ 
+        .menu button{
+            display: none;
+        }
+ 
+        @media (max-width: 600px) {
+            .menu-items {
+                display: none;
+            }
+            .menu button {
+                display: block;
+                padding: 0 30px;
+                height: 90px;
+            }
+        }
+ 
+        .header {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 0;
+        }
+ 
+        .header-wrap, 
+        .header-image {
+            flex-basis: 40%;
+        }
+ 
+        .header-image img {
+            max-width: 100%;
+            height: auto;
+        }
+ 
+        .header-wrap p {
+            padding: 30px 0;
+        }
+
+        @media (max-width: 600px){
+            .header-wrap,
+            .header-image {
+                flex-basis: 100%;
+
+            }
+            .header {
+                flex-wrap: wrap;
+            }
+            .header-wrap{
+                order: 2;
+                padding: 20px 0;
+                text-align: center;
+            }
+            .header-wrap h2{
+                text-align:center ;
+
+            }
+            .header-wrap p {
+                text-align: left;
+            }
+        }
+        .banner{
+            height: 80px;
+            background-color: grey;
+
+        }
+
+
+
+        .item{
+            flex-basis: 30%;
+        }
+        .item div{
+            text-align: center;
+        }
+        .items{
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container menu">
+            <div class="image">
+                <img src="https://placeimg.com/300/200/any" alt="" />
+            </div>
+            <div>
+                <button>Klik</button>
+                <ul class="menu-items">
+                    <li><a href="#">Start</a></li>
+                    <li><a href="#">Firma</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Kontakt</a></li>
+ 
+                </ul>
+            </div>
+        </div>
+ 
+    </nav>
+    <header>
+        <div class="container header">
+            
+            
+
+            
+            <div class="header-wrap">
+                <h2>Witaj na stronie</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis laboriosam, commodi doloribus explicabo maxime fugiat quisquam repellat ducimus ratione reiciendis facilis eos blanditiis rem dolor porro nobis animi amet hic.</p>
+                <button>Kliknij</button>
+ 
+ 
+            </div>
+            <div class="header-image">
+                <img src="https://placeimg.com/600/400/any" alt="" />
+            </div>
+        </div>
+        
+    </header>
+    <div class="banner"></div>
+    <section>
+        <div class="container-items">
+            <div class="item">
+          <h3>cos tam</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio iste praesentium soluta labore recusandae. Suscipit fugit velit et quis atque distinctio sed explicabo ratione itaque. Odit autem officia porro assumenda.</p>
+            </div>
+        </div>
+        <div class="container-items">
+            <div class="item">
+                <h3>cos tam</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio iste praesentium soluta labore recusandae. Suscipit fugit velit et quis atque distinctio sed explicabo ratione itaque. Odit autem officia porro assumenda.</p>
+                
+            </div>
+        </div>
+        <div class="container-items">
+            <div class="item">
+                <h3>cos tam</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio iste praesentium soluta labore recusandae. Suscipit fugit velit et quis atque distinctio sed explicabo ratione itaque. Odit autem officia porro assumenda.</p>
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>
