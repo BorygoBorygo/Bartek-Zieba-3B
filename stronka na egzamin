@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauracja tak</title>
+    <link rel="stylesheet" href="styl_1.css">
+</head>
+<body>
+    <header class="baner"></header>
+    <h1>Witamy w restauracja stacja ubikacja</h1>
+    <main>
+        <section class="blok-lewy">
+            <img src="jajo.jpg"
+             alt="Nasze danie na sniadanie">
+        </section>
+        <section class="blok-prawy"></section>
+        <h4>U nas smacznie sie zajadasz</h4>
+        <ol>
+            <li>Obiady od 79 zł</li>
+            <li>Przekąski od 100 zł</li>
+            <li>Kolacje od 420 zł</li>
+
+        </ol>
+        <section class="blok-dolny"></section>
+        <h2>Zarezerwuj stolik on-line (nima co)</h2>
+        <form action="">
+            <label>
+                Data(format rrrr-mm-dd);
+                <input type="text" name="data" />
+            </label>
+
+            <label>
+                Ile osob?
+                <input type="number" name="osoby" />
+            </label>
+
+            <label>
+                Twoj numer telefonu:
+                <input type="text" name="telefon" />
+            </label>
+            <input type="checkbox" name="daneOsobowe" />Zgadzam sie na 
+            przetwarzanie moich danych osobowych
+            <input type="reset" value="WYCZYŚĆ" />
+            <input type="submit" value="REZERWUJ" />
+        </form>
+    </main>
+    <footer class="stopka"></footer>
+</body>
+
+    </html>
+
+
+body {
+    background-color: #f6e5dc;
+    font-family: Verdana;
+}  
+.baner {
+    background-color: #2f180c;
+    text-align: center;
+    color: khaki;
+    height: 60px;
+
+}
+.blok-lewy {
+width: 60%;
+}
+
+.blok-prawy {
+    font-size: 150%;
+    padding: 70px;
+}
+
+.blok-dolny {
+    background-color: #d0b6a8;
+    text-align: center;
+    padding: 30px;
+}
+.stopka {
+    background-color: #2f180c;
+   color: khaki;
+   height: 60px;
+
+
+
+}
+
+
+.blok-lewy img{
+    height: 350px;
+}
+.przycisk{
+    margin: 10px;
+    padding: 5px;
+    background-color: #2f180c;
+    color: khaki;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
